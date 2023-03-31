@@ -1,13 +1,13 @@
 # Test Case for Gear Technologies Inc.
 
 ## Table of contents:
-* [Task Description](#task_description)
-* [Input generation](#input_generation)
-* [Array dividing](#array_dividing)
-* [Medians finding](#medians_finding)
-* [Parallel calculations](#algorithms_and_data_structures)
+* [Task Description](#task-description)
+* [Input generation](#input-generation)
+* [Array dividing](#array-dividing)
+* [Medians finding](#medians-finding)
+* [Parallel calculations](#parallel-calculations)
 * [Errors](#errors)
-* [Task 2 Answer](#task_2_answer)
+* [Task 2 Answer](#task-2-answer)
 
 ## Task Description
 Input is a large array of random integers. Divide array into N parts. 
