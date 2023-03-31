@@ -7,6 +7,7 @@
 * [Medians finding](#medians_finding)
 * [Parallel calculations](#algorithms_and_data_structures)
 * [Errors](#errors)
+* [Task 2 Answer](#task_2_answer)
 
 ## Task Description
 Input is a large array of random integers. Divide array into N parts. 
@@ -49,5 +50,9 @@ Since each vector is sorted using the **MergeSort** algorithm, it is possible to
 * for the zero row, we take elements from `0` to `ind`
 * for the rest of the rows (except the last one) we take starting from `a[i].size() / 2` (median) to `ind`
 * for the last row, the binary search changes to finding the index ind of the strictly greater element and starting from `ind` to `a[n - 1].size()`
+
 ## Errors
 Also, an `SIGABRT` error appears in about one out of ten cases. 
+
+## Task 2 Answer
+In sports programming, we have always been told that `10^8` simple operations can be performed in `1 second`. Suppose filling the sieve of Eratosthenes in an optimized way, you can find all prime numbers up to `10^7`. So it all depends on the asymptotics of the code and the memory being filled. For the above problem, MergeSort in memory and time takes the sum of all `(a[i].size() * log(a[i].size())` for each vector, binary search `log(a[i].size()` also for each vector. With an array size of 10^5, calculations will fit into 1 second even in the worst case.
