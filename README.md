@@ -21,6 +21,9 @@ where `random_shuffle` is implemented, which allows you to randomly generate arr
 The data is also written to the `input.txt` file.
 
 ## Array dividing
+Since the size of the array may not be evenly divisible by the number N, our goal is to divide it into approximately equal parts. To begin with, the `el_row` variable was created, which is responsible for how many *maximum elements should be in one part*, then we linearly go through each element of the input array and add them to the array of vectors in a certain row, the number of which will increase depending on the number of elements in it. Also, when filling each row, it keeps track of the number of unplaced elements and the number of free rows and changes `el_row`. If we briefly follow the remains in order to evenly distribute them over the rows of the array of vectors.
+
+## Medians finding
 Since sometimes the median must be found in a part with an even number of elements, they usually take the arithmetic mean of the two middle values.
 ```
 for(int i = 0; i < n; ++i){
@@ -31,8 +34,6 @@ for(int i = 0; i < n; ++i){
     }
 }
 ```
-## Medians finding
-
 ## Parallel calculations
 
 ## Errors
