@@ -46,7 +46,8 @@ for(auto &t: threads){
 }
 ```
 Since each vector is sorted using the mergesort algorithm, it is possible to run a binary search on the first **n-1** rows in the `compute` function on the row index. This is how we find the index `ind` of the first element strictly smaller than the target (the median of the next part) and beyond:
-*for the zero row, we take elements from `0` to `ind`
-*for the rest of the rows (except the last one) we take starting from `a[i].size() / 2` (median) to `ind`
-*for the last row, the binary search changes to finding the index ind of the strictly greater element and starting from `ind` to `a[n - 1].size()`
+* for the zero row, we take elements from `0` to `ind`
+* for the rest of the rows (except the last one) we take starting from `a[i].size() / 2` (median) to `ind`
+* for the last row, the binary search changes to finding the index ind of the strictly greater element and starting from `ind` to `a[n - 1].size()`
 ## Errors
+Also, an `SIGABRT` error appears in about one out of ten cases. 
